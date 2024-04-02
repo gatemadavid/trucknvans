@@ -1,0 +1,487 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand;
+}
+
+#main-header {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+  border-bottom: 1.5px solid #4caf50;
+}
+
+#home-icons {
+  border-bottom: 1.5px solid #4caf50;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none !important;
+  color: black;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #4caf50;
+}
+
+.active {
+  color: #4caf50;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-caption {
+  padding-bottom: 300px;
+}
+.carousel-caption h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.carousel-caption p {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.carousel-image-1 {
+  background: url("../img/image1.jpg");
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url("../img/image2.jpg");
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url("../img/image3.jpg");
+  background-size: cover;
+}
+
+.fa {
+  font-size: 30px;
+}
+
+#classes {
+  background-color: black;
+}
+
+#VanClass {
+  background-color: #898888;
+  color: #fff;
+}
+#classes h1 {
+  color: white;
+}
+#classes a {
+  text-decoration: none;
+}
+.card-img-overlay {
+  background-color: red(#000, 0.4);
+  display: none;
+}
+
+.hooverCard{
+  
+  display: none;
+}
+
+.hooverCard:hover{
+  display: block;
+  background-color: #696969;
+  transition: ease-in-out 0.5s;
+  transform: translateY(-1px);
+  margin: 0.3em;
+  opacity:0.9;
+}
+.options {
+  color: white;
+  padding: 3.5rem 3rem 0;
+  margin: 0px;
+  font-size: 15px;
+}
+.options i {
+  font-size: 22px;
+  float: left;
+  padding-right: 2em;
+}
+.options h6 {
+  float: center;
+}
+.options p {
+  margin-left: 3em;
+  font-size: 17px;
+  color: #898888;
+}
+
+#info {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#info i {
+  color: #4caf50;
+}
+.cell {
+  position: relative;
+  background: #333;
+}
+.cell::before,
+.cell::after {
+  content: "";
+  position: absolute;
+  top: 0.8rem;
+  bottom: 0.8rem;
+  left: 0.8rem;
+  right: 0.8rem;
+}
+.cell::before {
+  background: #333;
+  transform: scale(0);
+  transition: transform ease-in-out 250ms;
+}
+.cell:hover::before {
+  transform: scale(1);
+}
+.cell_img {
+  max-width: 100%;
+  display: block;
+  transition: opacity ease-in-out 250ms;
+  opacity: 1;
+}
+.cell_img:hover {
+  opacity: 0.3;
+}
+.cell-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  white-space: nowrap;
+}
+.cell:hover .cell-text {
+  opacity: 1;
+  z-index: 99;
+  transition: ease-in-out 300ms;
+}
+.cell-title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.cell-body {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.main {
+  display: grid;
+  grid-gap: 0.3rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cell:nth-child() {
+  grid-row: span 1;
+  grid-column: span 2;
+}
+.bg {
+  background-color: #4caf50;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+
+footer#main-footer {
+  background: #4caf50;
+  color: #fff;
+  font-size: 1.4em;
+}
+
+#newsletter {
+  background-color: #4caf50;
+}
+
+#trucks-header {
+  height: 85vh;
+  background: url("../img/image1.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding-top: 15rem;
+}
+#page-header h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#page-header p {
+  font-size: 25px;
+}
+
+#services-header {
+  height: 80vh;
+  background: url("../img/toyota.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding-top: 15rem;
+}
+#services-header h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#services-header p {
+  font-size: 25px;
+}
+
+
+#blog-header h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#blog-header p {
+  font-size: 25px;
+}
+
+#services .card-header {
+  background-color: #4caf50;
+  color: white;
+}
+
+#about {
+  text-transform: uppercase;
+  height: 150px;
+  background-color: #4caf50;
+  color: white;
+}
+#about h1 {
+  padding-top: 40px;
+  font-size: 50px;
+}
+
+#faq .card {
+  border: #444;
+}
+#faq .card a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}
+
+#contactdisplay {
+  height: 70vh;
+  background: url("../img/toyota.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding-top: 10rem;
+}
+#contactdisplay h1 {
+  font-size: 60px;
+  padding-top: 100px;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 1px;
+}
+
+#map-section h3 {
+  font-size: 2.5em;
+}
+
+#contact-links {
+  height: 500px;
+  width: 100%;
+  margin-top: 0;
+  background: #000;
+  color: #fff;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+.options h6 {
+  font-family: "Lobster Two", cursive;
+}
+.options p {
+  color: #827e7e;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.card .fa {
+  font-size: 15px;
+}
+
+.card li {
+  font-size: 14px;
+  padding: 7px;
+}
+
+#getinshape {
+  height: 700px;
+  background: url("../img/boxer.jpeg");
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+#getinshape a {
+  text-decoration: none;
+}
+#getinshape p {
+  font-size: 1.3em;
+}
+
+.gallery-item {
+  position: absolute;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transition: transform 0.8s ease;
+}
+
+.gallery-desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: 0.6s ease;
+  opacity: 0;
+}
+
+.gallery-desc:hover {
+  opacity: 1;
+  color: white;
+}
+
+.team-item {
+  position: relative;
+}
+
+.image {
+  display: block;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.image:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.middle {
+  position: absolute;
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+#schedule a {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+#schedule a:hover {
+  color: white;
+}
+
+.schedule-icon {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+}
+
+.schedule-font {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #4caf50;
+}
+
+.button {
+  background-color: white;
+  border: solid 1px #3ab54a;
+  display: block;
+  padding: 0.8rem 4.5rem 1rem;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+.button1 {
+  background-color: #3ab54a;
+  color: white;
+  border: solid 1px #3ab54a;
+  display: block;
+  padding: 0.8rem 5.5rem 1rem;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: solid 1px #3ab54a;
+  display: block;
+  padding: 0.3rem 5.5rem;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+.button:hover {
+  background-color: #3ab54a;
+  transition: 0.6s ease;
+  color: white;
+}
+
+.button1:hover {
+  background-color: transparent;
+  transition: 0.6s ease;
+  color: white;
+}
+
+.schedule-desc {
+  text-align: center;
+  text-transform: capitalize;
+}
+.schedule-desc p {
+  font-size: 18px;
+}
+
+
+.hidden {
+  display: none;
+}
