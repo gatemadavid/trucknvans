@@ -8,13 +8,10 @@ body {
 #main-header {
   position: fixed;
   z-index: 10;
-  background-color: white;
+  background-color: #0d0a44;
   width: 100%;
-  border-bottom: 1.5px solid #4caf50;
-}
-
-#home-icons {
-  border-bottom: 1.5px solid #4caf50;
+  color:#fff;
+ 
 }
 
 nav ul {
@@ -27,16 +24,17 @@ nav ul li {
 
 nav a {
   text-decoration: none !important;
-  color: black;
+  color: #fff;;
   font-size: 20px;
 }
 
 nav a:hover {
-  color: #4caf50;
+  color: #fff;
 }
 
 .active {
-  color: #4caf50;
+  color: #fff;
+  border-bottom: 1.5px solid #fff;
 }
 
 .carousel-item {
@@ -130,7 +128,7 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 #info i {
-  color: #4caf50;
+  color: #0d0a44;
 }
 .cell {
   position: relative;
@@ -201,7 +199,7 @@ nav a:hover {
 }
 
 footer#main-footer {
-  background: #4caf50;
+  background: #0d0a44;
   color: #fff;
   font-size: 1.4em;
 }
