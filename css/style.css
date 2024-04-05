@@ -264,6 +264,24 @@ footer#main-footer {
 footer#contactIcons{
   text-align: center;
 }
+#wrapper {
+  position: relative;
+  }
+#icon img {
+  position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    left: 15px;
+    z-index: 100;
+  
+  }
+ 
 
 #newsletter {
   background-color: #4caf50;
@@ -370,45 +388,7 @@ ul {
   padding: 7px;
 }
 
-#getinshape {
-  height: 700px;
-  background: url("../img/boxer.jpeg");
-  background-attachment: fixed;
-  color: #fff;
-  border-bottom: 1px #eee solid;
-  padding-top: 50px;
-}
-#getinshape a {
-  text-decoration: none;
-}
-#getinshape p {
-  font-size: 1.3em;
-}
 
-.gallery-item {
-  position: absolute;
-}
-.gallery-item img:hover {
-  transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transition: transform 0.8s ease;
-}
-
-.gallery-desc {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transition: 0.6s ease;
-  opacity: 0;
-}
-
-.gallery-desc:hover {
-  opacity: 1;
-  color: white;
-}
 
 .team-item {
   position: relative;
